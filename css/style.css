@@ -3,142 +3,348 @@
   padding: 0;
   margin: 0;
 }
-body{
-  background-color: black;
+/* Reseteo básico de márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{/*edicion zona navegable del INICIO*/
-  border-bottom: 2px solid darkgoldenrod;
-  background-color: black;
+
+/* Estilo del cuerpo */
+body {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco para buen contraste */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Estilo del header */
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
+  background: #333; /* Fondo oscuro para el header */
 }
-header nav ul{
+
+header img {
+  border-radius: 8px; /* Bordes redondeados para el logo */
+}
+
+nav ul {
   display: flex;
-  list-style-type: none;
-}
-header nav ul li{
-  margin: 5px;
-}
-header nav ul li a{
-  font-family: Arial, Helvetica, sans-serif;
-  color: darkgoldenrod;
-  text-decoration: none;
-}
-.titulo-1{/*titulo del inicio*/
-font-family:'Times New Roman', Times, serif;
-text-align: center;
-color: rgb(227, 180, 60);
-font-size: 28px;
-margin-top: 15px;
-}
-.carrusel{/*estilos aplicados al carrusel de imagenes del index*/
-  width: 1280px;
-  height: auto;
-  margin: 20px auto 0;
-  overflow: hidden;
-}
-.carrusel ul{
-  display: flex;
-  padding: 0;
-  width: 400%;
-  animation: slide 10s infinite alternate ease-in-out;
-}
-.carrusel ul li{
-  width: 100%;
   list-style: none;
-  position: relative;
 }
-@keyframes slide{
-  0%{margin-left: 0;}
-  20%{margin-left: 0;}
-  25%{margin-left: -100%;}
-  45%{margin-left: -100%;}
-  50%{margin-left: -200%;}
-  70%{margin-left: -200%}
-  75%{margin-left: -300%;}
-  100%{margin-left: -300%}
+
+nav ul li {
+  margin-left: 20px;
 }
-.novedades{/*NOVEDADES del inicio*/
-text-align: center;
-color: rgb(227, 180, 60);
-margin: 15px;
-font-size: 30px;
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
 }
-.imagen-inicio{/*reordenamiento de imagenes de inicio*/
-display: flex;
-justify-content: space-around; 
-align-items: center;
-width: 95%;
-margin: 0 auto; 
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
-.imagen-inicio img{
-width: 30%; 
-height: auto; 
-}
-.parrafo-1{/*edicion de parrafo del inicio*/
-color: rgb(227, 180, 60);
-margin: 20px;
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-font-size: 20px;
-}
-.ubicacion p{/*edicion del sector de ubicacion*/
-  color: rgb(209, 128, 30);
+
+/* Estilo del título principal */
+.titulo-1 {
   text-align: center;
-  font-size: 18px;
-  margin-top: 40px;
-}
-.mapa{
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  height: 40vh; 
-}
-footer {/*edicion de footer del inicio*/
-  background-color: black;
-  color: #FFD700;
-  text-align: center; 
+  color: #f4c542; /* Color dorado para el título */
   padding: 20px;
 }
+
+/* Estilo del carrusel */
+.imagenes-1{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.imagenes-1 ul {
+  display: flex;
+  list-style: none;
+}
+
+.imagenes-1 ul li {
+  margin: 0 10px;
+}
+
+.imagenes-1 img {
+  width: 300px; /* Ajusta el tamaño de las imágenes del carrusel */
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo de la sección de novedades */
+.novedades {
+  text-align: center;
+  color: #f4c542; /* Color dorado para las novedades */
+  padding: 20px;
+}
+
+/* Estilo de la segunda sección de imágenes */
+.imagen-inicio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.imagen-inicio img {
+  width: 300px; /* Ajusta el tamaño de las imágenes */
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo del primer párrafo */
+.parrafo-1 {
+  text-align: center;
+  margin: 20px;
+  color: #fff; /* Texto blanco para el párrafo */
+}
+
+/* Estilo de la sección de ubicación */
+.ubicacion {
+  text-align: center;
+  color: #fff;
+  margin: 20px;
+}
+
+.ubicacion .mapa iframe {
+  border-radius: 8px; /* Bordes redondeados para el iframe */
+}
+
+/* Estilo del footer */
+footer {
+  background-color: #333; /* Fondo oscuro para el footer */
+  color: #f4c542; /* Texto dorado */
+  text-align: center;
+  padding: 20px;
+}
+
 footer a {
-  color: #FFD700; 
+  color: #f4c542;
   text-decoration: none;
   margin: 0 10px;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
 /*FIN DE EDICION DE INDEX*/
+
 /*INICIO DE EDICION DE LA PAGINA NOSOTROS*/
-.titulo-2{/*edicion de titulo de nosotros*/
-  margin: 25px;
-  color: darkgoldenrod;
-  text-align: center;
- }
- .video-nosotros {/*edicion de video de nosotros*/
+/* Reseteo básico de márgenes y rellenos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco para buen contraste */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Estilo del header */
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #333; /* Fondo oscuro para el header */
 }
-.video-nosotros > div {
-  margin-bottom: 20px; 
+
+header img {
+  border-radius: 8px; /* Bordes redondeados para el logo */
 }
-.video-row {
-  display: flex; 
-  justify-content: center; 
-  gap: 20px; 
-  width: 100%; 
+
+nav ul {
+  display: flex;
+  list-style: none;
 }
-.video-1 {
-  width: 100; 
- margin: 25px;
+
+nav ul li {
+  margin-left: 20px;
 }
-.parrafo-nosotros{
-  color: darkgoldenrod;
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del título principal en la sección de videos */
+.titulo-2 {
+  text-align: center;
+  color: #f4c542; /* Color dorado para el título */
+  padding: 20px;
+}
+
+/* Estilo de la sección de videos */
+.video-1, .video-row, .video-nosotros {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.video-1 video{
+  width: 95%;
+}
+.video-row video,
+.video-nosotros video {
+  border-radius: 8px; /* Bordes redondeados para los videos */
+  width: 100%; /* Ajusta el ancho del video */
+  max-width: 600px; /* Limita el tamaño máximo del video */
+}
+
+/* Estilo del párrafo */
+.parrafo-nosotros {
   font-size: 25px;
   text-align: center;
+  margin: 20px;
+  color: #fff; /* Texto blanco para el párrafo */
+  padding: 0 10px; /* Añade algo de relleno a los lados */
 }
+
+/* Estilo del footer */
+footer {
+  background-color: #333; /* Fondo oscuro para el footer */
+  color: #f4c542; /* Texto dorado */
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #f4c542;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/*FIN DE EDICION PAGINA NOSOTROS*/
+
+/*INICIO EDICION PAGINA CARTA*/
+/* Estilos generales */
+body {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+header img {
+  border-radius: 8px; /* Bordes redondeados para el logo */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilo del contenido principal */
+main {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-align: center;
+  margin: 10px;
+  color: #ddd;
+}
+
+section {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #ddd;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.parrafo-nosotros {
+  text-align: center;
+  color: #ddd;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: hsl(56, 84%, 38%);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 
 
