@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto/Bohemia</title>
+  <!--link de css-->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <!--logo de la empresa-->
+    <img src="../image/logo-bohemia.png" alt="Logo Bohemia" width="150px">
+    <nav><!--zona navegable de contactos-->
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+</header>
+<h1 class="contacto">CONTACTO</h1>
+<main>
+  <section>
+    <h4>Reserva con nosotros y veni a conocer un espacio que combina lo mejor de la cocteleria con la mejor musica, y una experiencia culinaria unica. Te esperamos para compartir un momento unico!!!</h4>
+  </section>
+
+  <div class="reservacion">
+  <h2>Hacer una Reservación</h2>
+    <form action="reservacion.php" method="POST">
+
+      <label for="nombre">Nombre y Apellido:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="telefono">Número de Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="fecha">Fecha de Reserva:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <button type="submit">Reservar</button>
+    </form>
+  </div>
+</main>
+<div class="image-container"><!--zona de imagenes-->
+  <img src="../image/imagen 3.png" alt="imagen carta 1" width="300">
+  <img src="../image/imagen 1.png" alt="imagen index 1" width="300">
+  <img src="../image/10.png" alt="imagen index 3" width="300">
+  <img src="../image/imagen index 2.png" alt="imagen carta 5" width="300">
+</div>
+<footer>
+    <!--sector de redes sociales-->
+    <p>Seguinos en nuestras redes</p>
+    <a href="https://wa.me/qr/NDZUQJH5QPWYH1" target="_blank">Ir a Whatsapp</a>
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+
+    <p>Creado por Emiliano Silva</p>
+</footer>
+</body>
+</html>
