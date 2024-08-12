@@ -1,0 +1,13 @@
+@import "utilities/variables";
+@import "base/reset";
+@import "layout/header";
+@import "layout/index";
+@import "layout/index-footer";
+@import "media-queries/media-queries";
+
+/* Estilos específicos de cada página */
+@import 'components/nosotros';
+@import 'components/carta';
+@import 'components/promociones';
+@import 'components/contacto';
+

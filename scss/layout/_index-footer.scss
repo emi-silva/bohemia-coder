@@ -1,0 +1,16 @@
+footer {
+  background-color: $footer-bg;
+  color: $highlight-color;
+  text-align: center;
+  padding: 20px;
+
+  a {
+    color: $highlight-color;
+    text-decoration: none;
+    margin: 0 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.promociones {
+  text-align: center;
+  color: $highlight-color;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 200px;
+  padding: 30px;
+
+  section {
+    background-color: #222;
+    border-radius: $border-radius;
+    padding: 15px;
+    text-align: center;
+    color: $text-color;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+    }
+  }
+}

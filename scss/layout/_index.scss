@@ -1,0 +1,54 @@
+/* Estilo del título principal hasta sector ubicacion*/
+.titulo-1 {
+  text-align: center;
+  color: $highlight-color;
+  padding: 20px;
+}
+
+.carousel {
+  width: 95%;
+  margin: 0 auto;
+
+  .carousel-item {
+    img {
+      width: 100%;
+      height: auto;
+      background-color: $background-color;
+    }
+  }
+}
+
+.novedades {
+  text-align: center;
+  color: $highlight-color;
+  padding: 20px;
+}
+
+.imagen-inicio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $gap;
+  padding: 20px;
+
+  img {
+    width: 300px;
+    border-radius: $border-radius;
+  }
+}
+
+.parrafo-1 {
+  text-align: center;
+  margin: 20px;
+  color: $text-color;
+}
+
+.ubicacion {
+  text-align: center;
+  color: $text-color;
+  margin: 20px;
+
+  .mapa iframe {
+    border-radius: $border-radius;
+  }
+}

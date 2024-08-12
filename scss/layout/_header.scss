@@ -1,0 +1,40 @@
+
+/* Estilos del header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: $header-bg;
+  color: $text-color;
+  flex-wrap: wrap;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 1rem;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

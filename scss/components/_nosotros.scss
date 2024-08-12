@@ -1,0 +1,49 @@
+header {
+  padding: 20px;
+
+  img {
+    border-radius: $border-radius;
+  }
+}
+
+nav ul {
+  display: flex;
+
+  li {
+    margin-left: 20px;
+
+    a {
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.titulo-2 {
+  text-align: center;
+  color: $highlight-color;
+  padding: 20px;
+}
+
+.video-1, .video-row, .video-nosotros {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  video {
+    border-radius: $border-radius;
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.parrafo-nosotros {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+  color: $text-color;
+  padding: 0 10px;
+}
